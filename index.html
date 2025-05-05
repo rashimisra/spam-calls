@@ -133,7 +133,7 @@
     <div class="content">
         <div class="header">
             <h1>A Century of Spam: How Unwanted Calls Took Over America’s Phones</h1>
-            <p class="subhead">FCC data reveals how nuisance calls evolved over a century — peaking at 10 a.m., hitting monthly highs at the start of each month, and shifting tactics with each decade.</p>
+            <p class="subhead">FCC data reveals how nuisance calls evolved over a century, peaking at 10 a.m., hitting monthly highs at the start of each month, and shifting tactics with each decade.</p>
         </div>
         <div class="byline">
             <p>By <a href="https://rashimisra.github.io/">Rashi Mishra</a></p>
@@ -197,14 +197,11 @@
 
     <div class="content">
         <details class="methodology-box">
+            
             <summary><strong>Methodology</strong></summary>
             <p>This dataset has been of interest since I attended NICAR. Since this is such a huge dataset, I wanted to analyse this somewhere. Also, FCC recently adopted new rules requiring all voice service providers to block calls based on a “do-not-originate” (DNO) list, expanding previous requirements that targeted only certain providers.</p>
-            <p>Additional context on regulatory actions, technological solutions, and scam tactics was drawn from public releases by the FCC, FTC, and telecom providers like Verizon and T-Mobile.</p>
-        </details>
-    </div>
-    
-        
-
+            <p>I have analyzed the time angle with the dataset. The dataset has the spam record since 1900, which makes it interesting. It has over 3 million rows. I used pandas, and regex to classify data to analye three factors, time- the hour of the day when the spammers approached the most. Second, the phase of months when the spammers approached the most. I divided each month from 1-10, 11-20, and 21-30. At last, I calculated the year in which the spam calls were the most.</p>
+            
             <div class="footer">
         <div class="content">
             <p>Here is the github repo for the <a href="https://github.com/rashimisra/spam-calls">story</a>
